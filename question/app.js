@@ -35,3 +35,9 @@ let playerList = [
   },
 ];
 console.log(playerList[1].favorites[1]);
+
+function getArea() {
+  let average = (playerList[0].age + playerList[1].age + playerList[2].age) / 3;
+  console.log(average);
+}
+getArea();
