@@ -41,3 +41,14 @@ function getArea() {
   console.log(average);
 }
 getArea();
+
+
+
+sayHello()
+function sayHello() {
+  console.log('Hello');
+}
+let sayWorld = function() {
+  console.log('World');
+}
+sayWorld();
