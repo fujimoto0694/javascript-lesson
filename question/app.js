@@ -66,26 +66,20 @@ user.sayHello();
 
 
 let calc = {};
-function add(number) {
-  let add = number + 4;
-  console.log(add);
+calc.add = function(x, y) {
+  console.log(x + y);
 };
-add(3);
+calc.subtract = function(x, y) {
+  console.log(x - y);
+};
+calc.multiply = function(x, y) {
+  console.log(x * y);
+};
+calc.divide = function(x, y) {
+  console.log(x / y);
+};
 
-function subtract(number) {
-  let subtract = number - 5;
-  console.log(subtract);
-};
-subtract(15);
-
-function multiply(number) {
-  let multiply = number * number;
-  console.log(multiply);
-};
-multiply(7);
-
-function divide(number) {
-  let divide = number / 7;
-  console.log(divide);
-};
-divide(35);
+calc.add(3, 4);
+calc.subtract(12, 2);
+calc.multiply(7, 7);
+calc.divide(35, 7);
