@@ -83,3 +83,11 @@ calc.add(3, 4);
 calc.subtract(12, 2);
 calc.multiply(7, 7);
 calc.divide(35, 7);
+
+
+
+calc.remainder = function (x, y) {
+  let answer = x % y;
+  return answer;
+};
+console.log('5を3で割った余りは' + calc.remainder(5, 3) + 'です。');
