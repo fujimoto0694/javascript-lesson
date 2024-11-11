@@ -62,3 +62,30 @@ user.sayHello = function () {
   console.log('Hello!');
 }
 user.sayHello();
+
+
+
+let calc = {};
+function add(number) {
+  let add = number + 4;
+  console.log(add);
+};
+add(3);
+
+function subtract(number) {
+  let subtract = number - 5;
+  console.log(subtract);
+};
+subtract(15);
+
+function multiply(number) {
+  let multiply = number * number;
+  console.log(multiply);
+};
+multiply(7);
+
+function divide(number) {
+  let divide = number / 7;
+  console.log(divide);
+};
+divide(35);
