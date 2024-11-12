@@ -91,3 +91,13 @@ calc.remainder = function (x, y) {
   return answer;
 };
 console.log('5を3で割った余りは' + calc.remainder(5, 3) + 'です。');
+
+
+
+function foo() {
+  let x = 1;
+  console.log(x);
+}
+foo();
+/*スコープの中で定義された変数（let）はスコープの中でしか参照できない為、Q.10の様にスコープの外側から参照しようとしてもエラーが出る。
+また現状、関数を定義しただけで処理は実行されていないので、foo();をスコープの外側につけることでコンソールに出力結果が表示される。*/
