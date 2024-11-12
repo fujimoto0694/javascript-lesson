@@ -119,3 +119,11 @@ foo();
 /*Q1*/
 let random = Math.floor(Math.random()*10);
 console.log(random);
+
+
+
+/*Q2*/
+function sayHello() {
+  console.log('Hello World!');
+}
+setTimeout(sayHello, 3000);
