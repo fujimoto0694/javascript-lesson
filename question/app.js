@@ -166,3 +166,4 @@ for (let i = 0; i < mixed.length; i++) {
       console.log('not number');
       }
   };
+  
