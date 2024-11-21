@@ -1,7 +1,8 @@
 /*Q1*/
-let nickname = '私のニックネームはごっしーです。';
-let age = nickname + '年齢は２８歳です。';
-console.log(age);
+let nickname = 'ごっしー';
+let age =28;
+let string ='私のニックネームは' + nickname + 'です。年齢は ' + age +'歳です。'
+console.log(string);
 
 
 /*Q2*/
@@ -43,8 +44,11 @@ console.log(playerList[1].favorites[1]);
 
 
 /*Q5*/
+let total = playerList.reduce(function(sum, element) {
+  return sum + element.age;
+}, 0);
 function getArea() {
-  let average = (playerList[0].age + playerList[1].age + playerList[2].age) / 3;
+  let average = total / playerList.length;
   console.log(average);
 }
 getArea();
@@ -97,11 +101,11 @@ calc.divide(35, 7);
 
 
 /*Q9*/
-calc.remainder = function (x, y) {
+remainder = function (x, y) {
   let answer = x % y;
   return answer;
 };
-console.log('5を3で割った余りは' + calc.remainder(5, 3) + 'です。');
+console.log('5を3で割った余りは' + remainder(5, 3) + 'です。');
 
 
 
@@ -156,14 +160,12 @@ console.log(numbers);
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 for (let i = 0; i < mixed.length; i++) {
   let element = mixed[i];
-    if (typeof element === 'number') {
-      if (element % 2 === 0) {
-        console.log('even');
-      } else if (element % 2 === 1) {
-        console.log('odd');
-      }
-    } else {
-      console.log('not number');
-      }
-  };
   
+  if (typeof element === 'number' && element % 2 === 0) {
+      console.log('even');
+    } else if(typeof element === 'number' && element % 2 === 1) {
+      console.log('odd');
+    } else {
+    console.log('not number');
+  }
+}
