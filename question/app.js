@@ -7,7 +7,7 @@ console.log(string);
 
 /*Q2*/
 let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go'];
-let templateText = `私の好きな言語は` + languages[0] + `です。次は` + languages[3] + `を勉強してみたいです。`;
+let templateText = `私の好きな言語は ${languages[0]} です。次は ${languages[3]} を勉強してみたいです。`;
 console.log(templateText);
 
 
@@ -102,8 +102,7 @@ calc.divide(35, 7);
 
 /*Q9*/
 remainder = function (x, y) {
-  let answer = x % y;
-  return answer;
+  return x % y;
 };
 console.log('5を3で割った余りは' + remainder(5, 3) + 'です。');
 
